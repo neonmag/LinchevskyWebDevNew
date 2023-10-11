@@ -56,7 +56,7 @@ public class SignupServlet extends HttpServlet {
         RegFormModel model;
         HttpSession session = req.getSession();
         try{
-            model = new RegFormModel(req);
+            model = new RegFormModel(formParseResult);
         }
         catch (ParseException ex)
         {

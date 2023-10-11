@@ -36,7 +36,7 @@ public class RegFormModel {
         this.setEmail( fields.get( "reg-email" ) ) ;
         this.setBirthdate( fields.get( "reg-birthdate" ) ) ;
         this.setIsAgree( fields.get( "reg-rules" ) ) ;
-        Map<String, String> files = result.getFields();
+        Map<String, FileItem> files = result.getFiles();
         if(files.containsKey("reg-avatar"))
         {
             this.setAvatar(files.get("reg-avatar"));
